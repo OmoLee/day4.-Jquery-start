@@ -16,20 +16,20 @@ $(document).ready(function(){
     nextSlide.fadeIn(600);
     nowSlide.removeClass('active-slide');
     nextSlide.addClass('active-slide');
-
+// --------------------------------------------
     $('.dot active-dot').click(function(){
       var nowDot = $('.dot active-dot');
       var nextDOT =nowDot.next();
 
       if(nextDot.length === 0){
-          nextDot = $('.Dot').first().addClass('dot active-dot');
+          nextDot = $('.dot').first().addClass('dot active-dot');
       }
 
       nowDot.fadeOut(600);
       nextDot.fadeIn(600);
       nowDot.removeClass('dot active-dot');
       nextDot.addClass('dot active-dot');
-
+    });
 // 上一張.prev().last()
   });
 });
